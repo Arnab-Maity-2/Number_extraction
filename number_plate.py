@@ -1,4 +1,5 @@
 import cv2
+import os
 
 harcascade = "model/haarcascade_russian_plate_number.xml"
 
@@ -8,7 +9,9 @@ cap.set(3, 640) # width
 cap.set(4, 480) #height
 
 min_area = 500
-count = 0
+folder_path = '.\\plates'
+files = os.listdir(folder_path)
+count = int(len(files))
 
 while True:
     success, img = cap.read()

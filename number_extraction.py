@@ -1,7 +1,7 @@
 import easyocr
 import os
 
-folder_path = 'D:\\random-projects\\opencv\\Car-Number-Plates-Detection\\plates'
+folder_path = '.\\plates'
 files = os.listdir(folder_path)
 num_files = len(files)
 
